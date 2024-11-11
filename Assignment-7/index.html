@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rich-Text Editor</title>
+    <link rel="stylesheet" href="./assest/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="./assest/image/logo.png">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="main-head">rich text editor</h1>
+        <div class="card">
+            <div class="text-editor-header">
+                <button class="btn" data-element="bold">
+                    <i class="fa-solid fa-bold fa-2x"></i>
+                </button>
+                <button class="btn" data-element="italic">
+                    <i class="fa-solid fa-italic fa-2x"></i>
+                </button>
+                <button class="btn" data-element="underLine">
+                    <i class="fa-solid fa-underline fa-2x"></i>
+                </button>
+                <button class="btn" data-element="insertOrderedList">
+                    <i class="fa-solid fa-list-ol fa-2x"></i>
+                </button>
+                <button class="btn" data-element="insertUnorderedList">
+                    <i class="fa-solid fa-list-ul fa-2x"></i>
+                </button>
+                <button class="btn" data-element="justifyLeft">
+                    <i class="fa-solid fa-align-left fa-2x"></i>
+                </button>
+                <button class="btn" data-element="justifyCenter">
+                    <i class="fa-solid fa-align-center fa-2x"></i>
+                </button>
+                <button class="btn" data-element="justifyRight">
+                    <i class="fa-solid fa-align-right fa-2x"></i>
+                </button>
+                <button class="btn" data-element="justify">
+                    <i class="fa-solid fa-align-justify fa-2x"></i>
+                </button>
+                <button class="btn" data-element="subScript">
+                    <i class="fa-solid fa-subscript fa-2x"></i>
+                </button>
+                <button class="btn" data-element="superScript">
+                    <i class="fa-solid fa-superscript fa-2x"></i>
+                </button>
+                <button class="btn" data-element="copy">
+                    <i class="fa-solid fa-copy fa-2x"></i>
+                </button>
+                <button class="btn" data-element="cut">
+                    <i class="fa-solid fa-scissors fa-2x"></i>
+                </button>
+                <button class="btn" data-element="paste">
+                    <i class="fa-solid fa-paste fa-2x"></i>
+                </button>
+                <button class="btn" data-element="undo">
+                    <i class="fa-solid fa-arrow-rotate-left fa-2x"></i>
+                </button>
+                <button class="btn" data-element="redo">
+                    <i class="fa-solid fa-rotate-right fa-2x"></i>
+                </button>
+                <button class="btn" data-element="insertImage">
+                    <i class="fa-solid fa-image fa-2x"></i>
+                </button>
+                <button class="btn" data-element="createLink">
+                    <i class="fa-solid fa-link fa-2x"></i>
+                </button>
+
+                <select class="option" data-element="formatBlock">
+                    <option value="" selected="" hidden="" disabled="">Format</option>
+                    <option value="H1">H1</option>
+                    <option value="H2">H2</option>
+                    <option value="H3">H3</option>
+                    <option value="H4">H4</option>
+                    <option value="H5">H5</option>
+                    <option value="H6">H6</option>
+                    <option value="p">Paragraph</option>
+                </select>
+
+                <select class="option" data-element="fontName" id="font-Name">
+                    <option value="" selected="" hidden="" disabled="">Font Names</option>
+                    <option value="Arial">Arial</option>
+                    <option value="Serif">Serif</option>
+                    <option value="Cursive">Cursive</option>
+                    <option value="Verdana">Verdana</option>
+                    <option value="fantasy">Fantasy</option>
+                </select>
+
+
+                <select class="option" data-element="fontSize">
+                    <option value="" selected="" hidden="" disabled="">Font Size</option>
+                    <option value="1">Extra Small</option>
+                    <option value="2">Small</option>
+                    <option value="3">Medium</option>
+                    <option value="4">Large</option>
+                    <option value="5">Extra Large</option>
+                    <option value="6">Reset</option>
+                </select>
+
+                <div class="color-btn" data-element="foreColor">
+                    <input type="color" id="foreColor">
+                    <label for="foreColor">Font Color</label>
+                </div>
+
+                <div class="color-btn" data-element="backColor">
+                    <input type="color" id="backColor" value="#000000">
+                    <label for="backColor">Background Color</label>
+                </div>
+            </div>
+
+            <div class="create-text-editor" contenteditable="true">
+            </div>
+
+        </div>
+
+    </div>
+    
+    <script src="./assest/js/app.js"></script>
+</body>
+</html>

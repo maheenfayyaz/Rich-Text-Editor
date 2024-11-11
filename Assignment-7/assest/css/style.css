@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: aqua;
+}
+
+.main-head {
+    font-size: 3em;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Dancing Script", cursive;
+    padding: 0.5em 0 0 0em;
+    animation: fadeIn 2s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.card {
+    width: 90%;
+    height: auto;
+    /* background-color: antiquewhite; */
+    margin: auto;
+    margin-top: 1em;
+}
+
+.text-editor-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 18px;
+    padding: 8px;
+    /* background-color: violet; */
+}
+
+.btn {
+    width: 28px;
+    height: 28px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    margin-top: 1em;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    background-color: transparent;
+}
+
+.option {
+    padding: 7px;
+    border: 1px solid #020929;
+    border-radius: 4px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.3em;
+}
+
+.color-btn {
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1em;
+    background-color: transparent;
+    border: none;
+}
+
+input[type="color"] {
+    width: 50px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    box-shadow: 0 0 0 1px #ffff;
+    border-radius: 10px;
+}
+
+label {
+    font-size: 1.5em;
+}
+
+.create-text-editor {
+    height: 73vh;
+    outline: none;
+    padding: 1em;
+    overflow: auto;
+    font-size: 2em;
+    margin-top: 0.5em;
+    border: 1px solid #ffff;
+}
+
+ol,
+ul {
+    margin-left: 1em;
+}
+
+img {
+    /* width: auto;
+    height: 50%; */
+    margin-left: 10px;
+    max-width: 500px;
+}
+
+a {
+    cursor: pointer;
+}
